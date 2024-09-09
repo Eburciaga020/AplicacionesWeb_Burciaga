@@ -1,0 +1,29 @@
+ /* Pregunta: ¿Qué propiedad CSS se usa para cambiar el color de fondo de un elemento? background-color */
+ body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Pregunta: ¿Cómo se centra un div dentro de su contenedor padre horizontalmente? 
+Puedes utilizar la propiedad 'margin' con el valor auto para los márgenes izquierdo y derecho. */
+#container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Pregunta: ¿Cuál es la diferencia entre 'id' y 'class' en CSS? 
+Que el 'id' es un identificador único para un solo elemento y el 'class' ss un identificador reutilizable que se puede aplicar a múltiples elementos */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
