@@ -6,19 +6,19 @@ const id_producto = parseInt(ParametroURL.get('id_producto'), 10);
 const productos = {
     1: {
         nombre: "IPHONE 16",
-        imagen: "assets/imagenes/Producto1.jpg",
+        imagen: "Producto1.jpg",
         descripcion: "Iphone de ultima generacion",
         precio: "20,000"
     },
     2: {
         nombre: "APPLE WATCH",
-        imagen: "assets/imagenes/Producto2.jpg",
+        imagen: "Producto2.jpg",
         descripcion: "Apple watch de ultima generacion",
         precio: "$10,000"
     },
     3: {
         nombre: "AIRPODS",
-        imagen: "assets/imagenes/Producto3.jpg",
+        imagen: "Producto3.jpg",
         descripcion: "Airpods de ultima generacion",
         precio: "6,000"
     },
