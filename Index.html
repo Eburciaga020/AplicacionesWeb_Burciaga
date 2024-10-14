@@ -1,30 +1,33 @@
-<!DOCTYPE html> <!-- Declaración del tipo de documento, HTML5 -->
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración para adaptarse a dispositivos móviles -->
-    <title>Mi Página Personal</title> <!-- Título de la página -->
-    <link rel="stylesheet" href="Style.css"> <!-- Enlace al archivo de estilos CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mueblería</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Barra de navegación -->
-  <div class="encabezado">
-     <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li> <!-- Enlace a la sección Inicio -->
-            <li><a href="#quienes">Quienes somos</a></li> <!-- Enlace a la sección Sobre mí -->
-            <li><a href="#productos">Productos</a></li> <!-- Enlace a la sección Contacto -->
-            <li><a href="#contacto">Contacto</a></li> <!-- Enlace a la sección Contacto -->
-        </ul>
-     </nav>
+    
+    <!-- Encabezado con barra de navegación -->
+    <div class="encabezado">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes somos</a></li>
+                <li><a href="#contacto-usuario">Contacto</a></li>
+                <li><a href="#galeria-productos">Productos</a></li>
+            </ul>
+        </nav>
 
-     <div class="slider">
-        <img src="Assets/Imagenes/Logo.jpg" alt="Portada 1" class="slide">
-        <img src="Assets/Imagenes/Logo1.jpg" alt="Portada 1" class="slide">
-     </div>
-   </div>
-
-   <script src="Assets/Scripts/Slider.js"></script>
+        <!-- Slider de imágenes -->
+        <div class="slider">
+            <img src="assets/imagenes/Logo.jpg" alt="Portada 1" class="slide active">
+            <img src="assets/imagenes/Logo1.jpg" alt="Portada 2" class="slide">
+        </div>
+    </div>
 
     <!-- Sección principal -->
     <section id="inicio">
@@ -32,8 +35,34 @@
         <p>Esta es una página donde comparto información sobre mí y mis proyectos personales. ¡Gracias por visitarla!</p> <!-- Párrafo descriptivo -->
     </section>
 
-    <!-- Sección "Sobre mí" -->
-    <section id="quienes">
+    <!-- Sección de Productos -->
+    <section id="galeria-productos">
+        <h1>Productos</h1>
+        <p>Esta sección contiene información sobre los productos.</p>
+        <div class="galeria">
+            <div class="productos">
+                <img id="silla" src="assets/imagenes/Producto1.jpg" alt="silla" width="500">
+                <h3>IPHONE</h3
+                <!-- Botón con enlace a la página de compra de producto con el ID del producto -->
+                <a href="comp.html?id_producto=1"><input type="button" value="Comprar"></a>
+            </div>
+
+            <div class="productos">
+                <img id="guarda ropa" src="assets/imagenes/Producto2.jpg" alt="guarda ropas" width="500">
+                <h3>APPLE WATCH</h3>
+                <a href="comp.html?id_producto=2"><input type="button" value="Comprar"></a>
+            </div>
+
+            <div class="productos">
+                <img id="sillon" src="assets/imagenes/Producto3.jpg" alt="sillón" width="500">
+                <h3>AIRPODS</h3>
+                <a href="comp.html?id_producto=3"><input type="button" value="Comprar"></a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Sección "Sobre mí" -->
+     <section id="quienes">
         <h2>Quines somos</h2> <!-- Título de la sección "Sobre mí" -->
         <ul>
             <li>Soy un desarrollador apasionado por la tecnología.</li> <!-- Detalle 1 sobre mí -->
@@ -42,49 +71,27 @@
         </ul>
     </section>
 
-    <!-- Sección "Catalago de productos" -->
-     <section id="Productos">
-        <h2>Productos</h2>
-        <div class="galeria">
-            <div class="productos">
-                <img src="Assets/Imagenes/Producto1.jpg" alt="Producto1">
-                <h3>Iphone 16</h3>
-                <p>Descripcion</p>
-                <input type="submit" value="Comprar">
-
+    <!-- Formulario de contacto -->
+    <section id="contacto-usuario">
+        <h2>Contacto</h2>
+        <form action="#" method="post" id="formulario">
+            <div id="form">
+                <label for="name">Ingresa tu nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Ingresa tu correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Ingresa un mensaje:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <br>
+                <input id="boton1" type="submit" value="Enviar Formulario">
             </div>
-            <div class="productos">
-                <img src="Assets/Imagenes/Producto2.jpg" alt="Producto1">
-                <h3>Apple Watch 10</h3>
-                <p>Descripcion</p>
-                <input type="submit" value="Comprar">
-
-            </div>
-            <div class="productos">
-                <img src="Assets/Imagenes/Producto3.jpg" alt="Producto1">
-                <h3>Airpods 4</h3>
-                <p>Descripcion</p>
-                <input type="submit" value="Comprar">
-
-            </div>
-        </div>
-     </section>
-
-    <!-- Sección "Contacto" -->
-    <section id="contacto">
-        <h2>Contacto</h2> <!-- Título de la sección "Contacto" -->
-        <form action="#" method="post">
-            <label for="name">Nombre:</label> <!-- Etiqueta para el campo Nombre -->
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="email">Correo electrónico:</label> <!-- Etiqueta para el campo Correo electrónico -->
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="message">Mensaje:</label> <!-- Etiqueta para el campo Mensaje -->
-            <textarea id="message" name="message" rows="4"></textarea>
-            <br>
-            <input type="submit" value="Enviar"> <!-- Texto del botón de enviar -->
         </form>
     </section>
+
+    <!-- JavaScript para el slider -->
+    <script src="slider.js"></script>
+
 </body>
 </html>
